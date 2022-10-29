@@ -1,24 +1,11 @@
-import styled from "styled-components/native";
-import { View, Text } from "react-native";
+import {ThemeProvider} from "styled-components";
+import theme from "./src/theme";
+import Router from "./src/Router";
 
-export default function App() {
-  return (
-    <Container>
-      <Title color="palevioletred">Expo with 💅 Styled Components</Title>
-      <Title color="chocolate">iOS • Android • web</Title>
-    </Container>
-  );
+const App = () => {
+    return <ThemeProvider theme={theme}>
+        <Router/>
+    </ThemeProvider>
 }
 
-const Container = styled(View)`
-  flex: 1;
-  background-color: papayawhip;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Title = styled(Text)`
-  font-size: 24px;
-  font-weight: 500;
-  color: ${(props) => props.color};
-`;
+export default App;
