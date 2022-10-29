@@ -1,9 +1,8 @@
 import {Image, View} from "react-native";
 import {Center, Container, Title} from "../../global-components";
-import {LogoContainer} from "./styles";
+import {BtnPrimary, BtnSecondary, LogoContainer, TextBtnPrimary, TextBtnSecondary} from "../styles";
 
 const logo = require("../../public/logo.png")
-const next = require("../../public/next.png")
 const Welcome = ({ navigation }) => {
     return (
         <Container>
@@ -14,8 +13,20 @@ const Welcome = ({ navigation }) => {
                 <View>
                     <Title>
                         As Finanças
-                        Ao Seu Alcance.
+                        ao seu alcance.
                     </Title>
+                </View>
+                <View>
+                    <BtnSecondary>
+                        <TextBtnSecondary>
+                            Registrar
+                        </TextBtnSecondary>
+                    </BtnSecondary>
+                    <BtnPrimary>
+                        <TextBtnPrimary>
+                            Entrar
+                        </TextBtnPrimary>
+                    </BtnPrimary>
                 </View>
             </Center>
         </Container>

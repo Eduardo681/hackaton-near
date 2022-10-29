@@ -1,10 +1,11 @@
 import {Image, View} from "react-native";
 import {Center, Container, Title} from "../../global-components";
-import {LogoContainer, Next, NextContainer, NextImage, Subtitle} from "./styles";
+import {Next, NextContainer, NextImage} from "./styles";
+import {LogoContainer, Subtitle} from "../styles";
 
 const logo = require("../../public/logo.png")
 const next = require("../../public/next.png")
-const Welcome = ({ navigation }) => {
+const Welcome = ({navigation}) => {
     return (
         <Container>
             <Center>
