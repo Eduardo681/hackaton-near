@@ -112,7 +112,23 @@ const ContainerBtnM = styled.View`
     margin-right: 20px;
 `;
 
+const TopDashboardAndCashFlow = styled.View`
+    flex: 1;
+    align-items: center;
+`
+
+const ContainerAccountIcon = styled.View`
+    align-items: center;
+    margin-left: 260px;
+`;
+
+const AccountIconText = styled.Text`
+    margin-top: 3px;
+    color: #fff;
+`;
+
 export {
     Subtitle, LogoContainer, BtnPrimary, TextBtnPrimary, BtnSecondary,
-    TextBtnSecondary, ContainerBtns, Input, Container, Title, Center, Label, ContainerBtnM
+    TextBtnSecondary, ContainerBtns, Input, Container, Title, Center, Label, ContainerBtnM,
+    ContainerAccountIcon, AccountIconText, TopDashboardAndCashFlow
 };
