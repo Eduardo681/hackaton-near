@@ -1,7 +1,7 @@
 import {Image, View} from "react-native";
 import {Center, Container, Title} from "../../global-components";
 import {Next, NextContainer, NextImage} from "./styles";
-import {LogoContainer, Subtitle} from "../styles";
+import {LogoContainer, Subtitle} from "../../global-components";
 
 const logo = require("../../public/logo.png")
 const next = require("../../public/next.png")

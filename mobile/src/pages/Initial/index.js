@@ -1,9 +1,16 @@
 import {Image, View} from "react-native";
-import {Center, Container, Title} from "../../global-components";
-import {BtnPrimary, BtnSecondary, LogoContainer, TextBtnPrimary, TextBtnSecondary} from "../styles";
+import {Center, Container, ContainerBtnM, Title} from "../../global-components";
+import {
+    BtnPrimary,
+    BtnSecondary,
+    LogoContainer,
+    TextBtnPrimary,
+    TextBtnSecondary,
+    ContainerBtns
+} from "../../global-components";
 
 const logo = require("../../public/logo.png")
-const Welcome = ({ navigation }) => {
+const Welcome = ({navigation}) => {
     return (
         <Container>
             <Center>
@@ -12,22 +19,26 @@ const Welcome = ({ navigation }) => {
                 </LogoContainer>
                 <View>
                     <Title>
-                        As Finanças
+                        As finanças
                         ao seu alcance.
                     </Title>
                 </View>
-                <View>
-                    <BtnSecondary>
-                        <TextBtnSecondary>
-                            Registrar
-                        </TextBtnSecondary>
-                    </BtnSecondary>
-                    <BtnPrimary>
-                        <TextBtnPrimary>
-                            Entrar
-                        </TextBtnPrimary>
-                    </BtnPrimary>
-                </View>
+                <ContainerBtns>
+                    <ContainerBtnM>
+                        <BtnSecondary onPress={() => navigation.navigate("Register")}>
+                            <TextBtnSecondary>
+                                Registrar
+                            </TextBtnSecondary>
+                        </BtnSecondary>
+                    </ContainerBtnM>
+                    <ContainerBtnM>
+                        <BtnPrimary onPress={() => navigation.navigate("Login")}>
+                            <TextBtnPrimary>
+                                Entrar
+                            </TextBtnPrimary>
+                        </BtnPrimary>
+                    </ContainerBtnM>
+                </ContainerBtns>
             </Center>
         </Container>
     );
