@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const CardOfficer = props => {
     const officer = props.officer;
     return <div className="card-officer">
@@ -23,9 +25,9 @@ const CardOfficer = props => {
             </div>
         </div>
         <div className="exportar">
-            <button>
+            <a href="https://c63c-177-69-47-81.sa.ngrok.io/exportfiles/1">
                 <img src="exportar.svg" alt="Exportar"/>
-            </button>
+            </a>
         </div>
     </div>
 }
