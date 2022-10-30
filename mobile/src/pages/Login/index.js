@@ -1,11 +1,19 @@
-import {BtnPrimary, Center, Container, Input, Label, TextBtnPrimary} from "../../global-components";
-import {View} from "react-native";
 import {useState} from "react";
+import {View} from "react-native";
+import {
+    BtnPrimary, 
+    Center, 
+    Container, 
+    Input, 
+    Label, 
+    TextBtnPrimary,
+    Subtitle
+} from "../../global-components";
 
 
 const Login = ({navigation}) => {
 
-    navigation.setOptions({headerTitle: "Entrar"});
+    navigation.setOptions( {headerTitle: "Entrar"} );
 
     const {email, setEmail} = useState("");
     const {password, setPassword} = useState("");
@@ -35,11 +43,19 @@ const Login = ({navigation}) => {
                         placeholderTextColor={"#494D58"}
                     />
                 </View>
+
+                <Subtitle>Esqueci minha senha</Subtitle>
             </View>
             <View style={{flex: 2}}>
                 <BtnPrimary onPress={() => handleLogin()}>
                     <TextBtnPrimary>Entrar</TextBtnPrimary>
                 </BtnPrimary>
+            </View>
+
+            <View>
+                <Label>Novo no Near? 
+                    <Subtitle> Crie sua conta</Subtitle>
+                </Label>
             </View>
         </Center>
     </Container>

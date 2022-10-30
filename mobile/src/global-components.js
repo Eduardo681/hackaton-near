@@ -26,7 +26,7 @@ const Subtitle = styled.Text`
 
 
 const LogoContainer = styled.View`
-    flex: 2;
+    flex: 1;
     justify-content: center;
 `;
 
@@ -38,8 +38,7 @@ const BtnPrimary = styled.TouchableOpacity`
     align-content: center;
     text-align: center;
     padding: 13.313px 22.1883px;
-    gap: 11.09px;
-    width: 100%;
+    width: 330px;
     height: 60px;
     background: ${props => props.theme.primary};;
     border-radius: 13.313px;
@@ -90,11 +89,12 @@ const Input = styled.TextInput`
     align-items: center;
     padding: 14px 22px 14px 17px;
     gap: 11.1px;
-    width: 350px;
+    width: 330px;
     height: 60px;
     color: white;
     background: #21242D;
     border-radius: 13.3249px;
+    margin-bottom: 20px;
 `;
 
 const Label = styled.Text`
@@ -104,6 +104,7 @@ const Label = styled.Text`
     font-size: 15.5457px;
     line-height: 22px;
     color: #A7AEBF;
+    margin-bottom: 5px;
 `;
 
 const ContainerBtnM = styled.View`
