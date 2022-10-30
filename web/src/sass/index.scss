@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #16171D;
+}
+
+.home {
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  .half {
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.left {
+      background: rgba(0, 0, 0, 0.3);
+
+
+      span {
+        font-family: 'Poppins', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+
+        display: flex;
+        align-items: flex-end;
+        color: #FFFFFF;
+      }
+
+      img {
+        width: 90px;
+        height: 430px;
+        margin-bottom: 100px;
+      }
+    }
+
+    &.right {
+      display: flex;
+      flex-direction: column;
+
+      form {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+.consolidation {
+  display: flex;
+
+  .container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-left: 10%;
+
+    label {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #A7AEBF;
+    }
+
+    .texto {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17.7666px;
+      line-height: 27px;
+
+      color: #FFFFFF;
+      margin: 10px;
+    }
+
+    .row {
+      display: flex;
+
+      div {
+        width: 50%;
+      }
+    }
+
+    .exportar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: -50px;
+      margin-right: 150px;
+
+      button {
+        background: transparent;
+        border: none;
+      }
+    }
+
+    .saldo {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+.sidebar {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10%;
+  background: rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  position: fixed;
+
+  .logo {
+    width: 90px;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+  }
+}
+
+
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14.4353px 22.2082px 14.4353px 17.7666px;
+  gap: 11.1px;
+
+  background: #21242D;
+  border-radius: 13.3249px;
+  border: none;
+  width: 360px;
+}
+
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13.3249px 22.2082px;
+  gap: 11.1px;
+  border: none;
+  background: #00CFC3;
+  border-radius: 13.3249px;
+}
+
+.title {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+
+  display: flex;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+
+.card-officer {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 22.3067px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+
+  &.card-consolidation {
+    background: #21242D;
+    border-radius: 22.3067px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+
+    .amount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 50px;
+    }
+  }
+
+  .general {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .payment {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 170px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+
+  .grey {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.positive {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+
+  color: #00CFC3;
+}
+
+.negative {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+
+  color: #F54968;
+}
+
+.list {
+  display: flex;
+
+  .titleContainer {
+    width: 1000px;
+    height: 58px;
+
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22.3067px;
+    padding-top: 15px;
+    padding-left: 25px;
+
+    box-sizing: border-box;
+
+    div {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 15px;
+      color: #00CFC3;
+    }
+  }
+
+  .baseItens {
+    margin-top: 50px;
+  }
+
+  .item {
+    display: flex;
+    padding: 30px;
+    width: 1000px;
+    box-sizing: border-box;
+    height: 85px;
+    left: 273px;
+    top: 284px;
+
+    background: #21242D;
+    border-radius: 22.3067px;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .itemText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        margin-bottom: 5px;
+      }
+
+      label {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 27px;
+
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    button {
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+.newContainer {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .new {
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.connect {
+  display: flex;
+
+  button {
+    width: 168.63px;
+    height: 53.25px;
+  }
+
+  input {
+    margin-top: 10px;
+  }
+  .containerForm {
+    margin-top: 100px;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22.3067px;
+    margin-bottom: 70px;
+
+    label {
+      margin-bottom: 10px;
+      color: #A7AEBF;
+    }
+  }
+}
