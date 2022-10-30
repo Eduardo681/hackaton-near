@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { TouchableOpacity } from "react-native";
 
 import {
     PeriodOfFilter,
@@ -8,57 +9,68 @@ import {
     InputPeriod,
     InputPeriodContainer,
     LabelPeriod,
-    IconPeriod
+    IconPeriod,
+    InputValue,
 } from './styles';
-import { TouchableOpacity } from "react-native";
 
-
-
+import formatDate from "../../../utils/formatDate";
 
 const PeriodFilter = () => {
 
-    const {startDate, setStartDate} = useState(new Date());
-    const {endDate, setEndDate} = useState('');
+    const [startDate, setStartDate] = useState('');
+    const [endDate, setEndDate] = useState('');
 
     const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-    const [dataPickerValue, setdataPickerValue] = useState('');
+    const [datePickerValue, setDatePickerValue] = useState('');
 
-    const showDatePicker = () => {
+    const showDatePicker = (nameDatePicker) => {
+        setDatePickerValue(nameDatePicker);
         setDatePickerVisibility(true);
     };
     
     const hideDatePicker = () => setDatePickerVisibility(false);
 
     const handleConfirm = (date) => {
-        console.warn("A date has been picked: ", date);
-        hideDatePicker();
+        if (datePickerValue === 'startDate') {
+            setDatePickerVisibility(false);
+            setDatePickerValue('');
+            setStartDate(formatDate(date));
+        }
+        if (datePickerValue === 'endDate') {
+            setDatePickerVisibility(false);
+            setDatePickerValue('');
+            setEndDate(formatDate(date));
+        }
+        
     };
     
     return (
         <PeriodOfFilter>
             <LabelPeriod>Período</LabelPeriod>
             <InputPeriodContainer>
-                <TouchableOpacity
-                    onPress={() => showDatePicker('startDate')}
-                >
-                    <InputPeriod
-                        onChangeText={t => setEndDate(t)}
-                        value={startDate}
-                        placeholderTextColor={"#494D58"}
-                    />
-                </TouchableOpacity>
                 <DateTimePickerModal
                     isVisible={isDatePickerVisible}
                     mode="date"
                     onConfirm={handleConfirm}
                     onCancel={hideDatePicker}
                 />
+                <TouchableOpacity
+                    onPress={() => showDatePicker('startDate')}
+                >
+                    <InputPeriod
+                        placeholderTextColor={"#494D58"}
+                    >
+                        <InputValue>{startDate}</InputValue>
+                    </InputPeriod>
+                </TouchableOpacity>
                 <TextInput>a</TextInput>
-                <InputPeriod
-                    onChangeText={t => setEndDate(t)}
-                    value={endDate}
-                    placeholderTextColor={"#494D58"}
-                />
+                <TouchableOpacity
+                    onPress={() => showDatePicker('endDate')}
+                >
+                    <InputPeriod>
+                        <InputValue>{startDate}</InputValue>
+                    </InputPeriod>
+                </TouchableOpacity>
                 <IconPeriod>
                     <Ionicons
                         name="search-outline"
