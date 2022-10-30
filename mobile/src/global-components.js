@@ -9,7 +9,7 @@ const Title = styled.Text`
     font-family: 'Poppins, roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 58px;
     color: white;
 `;
