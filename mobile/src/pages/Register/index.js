@@ -2,8 +2,19 @@ import { BtnPrimary, Center, Container, Input, Label, TextBtnPrimary } from "../
 import { View, Text, ScrollView } from "react-native";
 import { useState } from "react";
 import { Checkbox } from 'react-native-paper';
+import {
+    useFonts, 
+    Poppins_400Regular, 
+    Poppins_700Bold
+} from "@expo-google-fonts/poppins";
 
 const Register = ({navigation}) => {
+    let [fontsLoaded] = useFonts({
+        Poppins_400Regular,
+        Poppins_700Bold,
+    });
+
+    if (!fontsLoaded) null;
 
     navigation.setOptions({headerTitle: "Registrar"});
 
@@ -54,7 +65,7 @@ const Register = ({navigation}) => {
                         />
                     </View>
                     <View>
-                        <Label>Password</Label>
+                        <Label>Senha</Label>
                         <Input onChangeText={t => setPassword(t)}
                             value={password}
                             placeholder="Informe a senha"
@@ -63,7 +74,6 @@ const Register = ({navigation}) => {
                     </View>
                     <View style={{flexDirection: "row", alignItems: "center", marginBottom: 30}}>
                         <Checkbox
-                            
                             uncheckedColor="#fff"
                             status={acceptTerms ? 'checked' : 'unchecked'}
                             onPress={() => {

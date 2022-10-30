@@ -6,7 +6,7 @@ const Container = styled.SafeAreaView`
 `;
 
 const Title = styled.Text`
-    font-family: 'Poppins, roboto';
+    font-family: 'Poppins_400Regular';
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
@@ -21,6 +21,7 @@ const Center = styled.View`
 `;
 
 const Subtitle = styled.Text`
+    font-family: "Poppins_400Regular";
     color: ${props => props.theme.primary};
 `;
 
@@ -45,7 +46,7 @@ const BtnPrimary = styled.TouchableOpacity`
 `;
 
 const TextBtnPrimary = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 500;
     font-size: 19.9695px;
@@ -68,7 +69,7 @@ const BtnSecondary = styled.TouchableOpacity`
 `;
 
 const TextBtnSecondary = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 500;
     font-size: 19.9695px;
@@ -95,10 +96,11 @@ const Input = styled.TextInput`
     background: #21242D;
     border-radius: 13.3249px;
     margin-bottom: 20px;
+    font-family: "Poppins_400Regular";
 `;
 
 const Label = styled.Text`
-    font-family: 'Poppins';
+    font-family: 'Poppins_400Regular';
     font-style: normal;
     font-weight: 500;
     font-size: 15.5457px;

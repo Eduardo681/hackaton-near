@@ -10,17 +10,17 @@ import Permission from "./pages/Permission";
 
 const Stack = createNativeStackNavigator();
 
-const options = {
-    headerStyle: {
-        backgroundColor: "#16171D",
-        color: "#fff",
-    },
-    headerTintColor: "white",
-    headerTitleAlign: 'center',
-}
-
 
 const Router = () => {
+    const options = {
+        headerStyle: {
+            backgroundColor: "#16171D",
+            color: "#fff",
+        },
+        headerTintColor: "white",
+        headerTitleAlign: 'center',
+    }
+
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShadowVisible: false }}>

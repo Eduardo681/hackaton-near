@@ -16,8 +16,19 @@ import {
 
 import formatDate from "../../../utils/formatDate";
 
+import {
+    useFonts, 
+    Poppins_400Regular, 
+    Poppins_700Bold
+} from "@expo-google-fonts/poppins";
 
 const PeriodFilter = () => {
+    let [fontsLoaded] = useFonts({
+        Poppins_400Regular,
+        Poppins_700Bold,
+    });
+
+    if (!fontsLoaded) null;
 
     const [startDate, setStartDate] = useState(moment().startOf('month').format('DD/MM/YYYY'));
     const [endDate, setEndDate] = useState(moment().endOf('month').format('DD/MM/YYYY'));

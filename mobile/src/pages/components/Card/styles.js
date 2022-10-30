@@ -12,7 +12,7 @@ const CardContainer = styled.View`
 `;
 
 const CardDate = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
@@ -23,7 +23,7 @@ const CardDate = styled.Text`
 `;
 
 const CardDesc = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -33,7 +33,7 @@ const CardDesc = styled.Text`
 `;
 
 const CardPositive = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -45,7 +45,7 @@ const CardPositive = styled.Text`
 `;
 
 const CardNegative = styled.Text`
-    font-family: 'Poppins';
+    font-family: "Poppins_400Regular";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

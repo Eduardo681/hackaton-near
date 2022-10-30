@@ -3,8 +3,9 @@ import theme from "./src/theme";
 import Router from "./src/Router";
 
 const App = () => {
+
     return <ThemeProvider theme={theme}>
-        <Router/>
+        <Router style={{fontFamily: "Poppins_400Regular"}}/>
     </ThemeProvider>
 }
 

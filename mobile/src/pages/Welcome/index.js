@@ -7,10 +7,23 @@ import {
     ContainerStyled as Container, 
 } from "./styles";
 
+import {
+    useFonts, 
+    Poppins_400Regular, 
+    Poppins_700Bold
+} from "@expo-google-fonts/poppins";
+
 const logo = require("../../public/logo.png");
 const next = require("../../public/next.png");
 
 const Welcome = ({navigation}) => {
+    let [fontsLoaded] = useFonts({
+        Poppins_400Regular,
+        Poppins_700Bold,
+    });
+
+    if (!fontsLoaded) null;
+
     return (
         <Container>
             <Center>

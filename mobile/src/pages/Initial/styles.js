@@ -6,7 +6,8 @@ const ContainerStyled = styled(Container)`
 `;
 
 const TitleStyled = styled(Title)`
-  margin: 0 65px;
+  font-family: "Poppins_700Bold";
+  margin: 0 30px;
 `;
 
 const BtnPrimaryStyled = styled(BtnPrimary)`

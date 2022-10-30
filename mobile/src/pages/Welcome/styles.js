@@ -18,6 +18,7 @@ const NextImage = styled.Image`
 `;
 
 const TitleWelcome = styled(Title)`
+    font-family: "Poppins_700Bold";
     margin: 0 50px;
 `;
 

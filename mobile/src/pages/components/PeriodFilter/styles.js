@@ -6,6 +6,7 @@ const PeriodOfFilter = styled.View`
 `;
 
 const TextInput = styled.Text`
+    font-family: "Poppins_400Regular";
     color: #FFF;
     margin-top: 4%;
     margin-right: 3%;
@@ -28,14 +29,16 @@ const InputPeriod = styled.View`
     color: white;
     background: #21242D;
     border-radius: 13.3249px;
+    font-family: "Poppins_400Regular";
 `;
 
 const InputValue = styled.Text`
+    font-family: "Poppins_400Regular";
     color: #fff
 `;
 
 const LabelPeriod = styled.Text`
-    font-family: 'Poppins';
+    font-family: 'Poppins_400Regular';
     font-style: normal;
     font-weight: 500;
     font-size: 15.5457px;
