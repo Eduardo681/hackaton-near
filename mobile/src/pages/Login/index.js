@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {View} from "react-native";
+import {View, TouchableOpacity} from "react-native";
 import {
     BtnPrimary, 
     Center, 
@@ -9,7 +9,6 @@ import {
     TextBtnPrimary,
     Subtitle
 } from "../../global-components";
-
 
 const Login = ({navigation}) => {
 
@@ -52,9 +51,9 @@ const Login = ({navigation}) => {
                 </BtnPrimary>
             </View>
 
-            <View>
+            <View style={{marginBottom: 10}}>
                 <Label>Novo no Near? 
-                    <Subtitle> Crie sua conta</Subtitle>
+                        <Subtitle> Crie sua conta</Subtitle>
                 </Label>
             </View>
         </Center>
