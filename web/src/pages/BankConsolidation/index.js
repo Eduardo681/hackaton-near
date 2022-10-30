@@ -17,12 +17,11 @@ const BankConsolidation = () => {
         axios.get("https://c63c-177-69-47-81.sa.ngrok.io/transactions").then((res => {
             setConsolidation(res.data.results);
         }))
-    }, consolidation)
+    }, [consolidation])
 
     const saldo = () => {
         let saldoTotal = 0;
         consolidation.map(e => {
-            console.log(e)
             saldoTotal += e.amount;
         })
 

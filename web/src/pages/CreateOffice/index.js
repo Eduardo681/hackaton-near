@@ -1,18 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 
-const DetailsOffice = () => {
+const CreateOffice = () => {
     const navigate = useNavigate();
 
-    const clickButtonSave = () => {
-        navigate("/list");
+    const clickButtonReturn = () => {
+        navigate("/list-escritorios");
     }
 
     return (
         <div className="detail-office">
             <Sidebar/>
             <div className="container">
-                <div className="title">Primeiro acesso - atualização de dados</div>
+                <div className="title">Novo</div>
                 <div className="containerForm">
                     <div className="containerFields">
                         <div>
@@ -67,8 +67,8 @@ const DetailsOffice = () => {
                 </div>
                 <div className="grid-buttons">
                     <button
-                        className="btn-primary button-pointer"
-                        onClick={() => clickButtonSave()}
+                        className="btn-primary"
+                        onClick={() => clickButtonReturn()}
                     >
                         Salvar
                     </button>
@@ -78,4 +78,4 @@ const DetailsOffice = () => {
     )
 }
 
-export default DetailsOffice;
+export default CreateOffice;
