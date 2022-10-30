@@ -5,7 +5,8 @@ import Item from "../../components/Item";
 const BankConsolidation = () => {
     const item = {
         razao_social: "Giovanni e Samuel Marcenaria ME",
-        cnpj: "85.034.915/0001-70"
+        cnpj: "85.034.915/0001-70",
+        type_screen: "consolidation"
     }
     return (
         <div className="list">

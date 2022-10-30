@@ -4,15 +4,15 @@ import Sidebar from "../../components/Sidebar";
 const DetailsOffice = () => {
     const navigate = useNavigate();
 
-    const clickButtonReturn = () => {
-        navigate("/list-escritorios");
+    const clickButtonSave = () => {
+        navigate("/list");
     }
 
     return (
         <div className="detail-office">
             <Sidebar/>
             <div className="container">
-                <div className="title">Detalhes</div>
+                <div className="title">Primeiro acesso - atualização de dados</div>
                 <div className="containerForm">
                     <div className="containerFields">
                         <div>
@@ -21,7 +21,6 @@ const DetailsOffice = () => {
                                 className="input-transparent"
                                 type="text"
                                 placeholder="Informe razão social"
-                                value={"Kruszlink ME"}
                             />
                         </div>
                         <div>
@@ -31,7 +30,6 @@ const DetailsOffice = () => {
                                 className="input-transparent"
                                 type="text"
                                 placeholder="Informe o cnpj"
-                                value={"11.570.199/0001-00"}
                             />
                         </div>
                         <div>
@@ -39,7 +37,6 @@ const DetailsOffice = () => {
                             <input
                                 type="text"
                                 placeholder="Informe CRC"
-                                value={"1SP999999/P1"}
                             />
                         </div>
                     </div>
@@ -49,7 +46,6 @@ const DetailsOffice = () => {
                             <input
                                 type="text"
                                 placeholder="Informe o contador responsável"
-                                value={"Donicio"}
                             />
                         </div>
                         <div>
@@ -57,7 +53,6 @@ const DetailsOffice = () => {
                             <input
                                 type="text"
                                 placeholder="Informe o e-mail"
-                                value={"email@gmail.com"}
                             />
                         </div>
                         <div>
@@ -66,21 +61,14 @@ const DetailsOffice = () => {
                                 className="input-transparent"
                                 type="password"
                                 placeholder="Informe a senha"
-                                value={"TESTE"}
                             />
                         </div>
                     </div>
                 </div>
                 <div className="grid-buttons">
                     <button
-                        className="btn-outline-primary"
-                        onClick={() => clickButtonReturn()}
-                    >
-                        Excluir
-                    </button>
-                    <button
-                        className="btn-primary"
-                        onClick={() => clickButtonReturn()}
+                        className="btn-primary button-pointer"
+                        onClick={() => clickButtonSave()}
                     >
                         Salvar
                     </button>

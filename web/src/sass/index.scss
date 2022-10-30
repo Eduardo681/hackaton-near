@@ -42,7 +42,9 @@ body {
 
     &.right {
       display: flex;
+      flex: 3;
       flex-direction: column;
+      margin-top: 15%;
 
       form {
         height: 200px;
@@ -431,6 +433,7 @@ input {
 
     input {
       margin-bottom: 5%;
+      color: white;
     }
 
     .input-transparent {
@@ -456,4 +459,13 @@ input {
   cursor: pointer;
   border-color: #00CFC3;
   color: #00CFC3;
+}
+
+.btn-first-acess {
+  color: #00CFC3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  margin-bottom: 2%;
 }

@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+const HomeFirstAcess = () => {
     const navigate = useNavigate();
 
     const clickButton = () => {
-        navigate("/list-escritorios");
+        navigate("/first-acess-create");
     }
 
-    const clickfirstAcess = () => {
-        navigate("/first-acess");
+    const clickReturn = () => {
+        navigate("/");
     }
 
     return <div className="home">
@@ -22,10 +22,10 @@ const Home = () => {
         </div>
         <div className="half right">
             <div className="title">
-                Bem vindo ao   <span style={{color: "#00CFC3"}}>Near</span>
+                Bem vindo ao<span style={{color: "#00CFC3"}}>Near</span>
             </div>
             <form action="">
-                <input type="text" placeholder="Informe seu e-mail"/>
+                <input type="text" placeholder="Informe seu CNPJ"/>
                 <input type="password" placeholder="Informe sua senha"/>
                 <button
                     className={"btn-primary button-pointer"}
@@ -35,13 +35,13 @@ const Home = () => {
                 </button>
             </form>
             <button
-                onClick={() => clickfirstAcess()}
+                onClick={() => clickReturn()}
                 className="btn-first-acess"
             >
-                Primeiro acesso
+                <img src="arrow-return.svg" alt="Logo"/> Voltar
             </button>
         </div>
     </div>
 }
 
-export default Home;
+export default HomeFirstAcess;
