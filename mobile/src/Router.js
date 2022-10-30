@@ -6,6 +6,7 @@ import Initial from "./pages/Initial";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import FlushCash from "./pages/FlushCash";
+import Permission from "./pages/Permission";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,7 @@ const Router = () => {
                 <Stack.Screen name="FlushCash" component={FlushCash} options={{headerShown: false}}/>
                 <Stack.Screen name="Login" component={Login} options={options}/>
                 <Stack.Screen name="Register" component={Register} options={options}/>
+                <Stack.Screen name="Permission" component={Permission} options={options}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

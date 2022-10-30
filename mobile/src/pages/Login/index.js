@@ -19,7 +19,7 @@ const Login = ({navigation}) => {
     const {password, setPassword} = useState("");
 
     const handleLogin = () => {
-        navigation.navigate('FlushCash')
+        navigation.navigate('Permission')
     }
 
     return <Container>
