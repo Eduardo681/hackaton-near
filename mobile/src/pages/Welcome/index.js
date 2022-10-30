@@ -1,10 +1,14 @@
-import {Image, View} from "react-native";
-import {Center, Container, Title} from "../../global-components";
+import { View, Image } from "react-native";
+import { Center } from "../../global-components";
 import {Next, NextContainer, NextImage} from "./styles";
 import {LogoContainer, Subtitle} from "../../global-components";
+import { 
+    TitleWelcome as Title,
+    ContainerStyled as Container, 
+} from "./styles";
 
-const logo = require("../../public/logo.png")
-const next = require("../../public/next.png")
+const logo = require("../../public/logo.png");
+const next = require("../../public/next.png");
 
 const Welcome = ({navigation}) => {
     return (
@@ -19,12 +23,12 @@ const Welcome = ({navigation}) => {
                         ao <Subtitle>Near</Subtitle>
                     </Title>
                 </View>
-                <NextContainer>
-                    <Next onPress={() => navigation.navigate('Initial')}>
-                        <NextImage source={next}/>
-                    </Next>
-                </NextContainer>
             </Center>
+            <NextContainer>
+                <Next onPress={() => navigation.navigate('Initial')}>
+                    <NextImage source={next}/>
+                </Next>
+            </NextContainer>
         </Container>
     );
 }
