@@ -1,13 +1,18 @@
 import {Image, View} from "react-native";
-import {Center, Container, ContainerBtnM, Title} from "../../global-components";
 import {
-    BtnPrimary,
-    BtnSecondary,
     LogoContainer,
     TextBtnPrimary,
     TextBtnSecondary,
-    ContainerBtns
+    ContainerBtns,
+    Center,  
+    ContainerBtnM, 
 } from "../../global-components";
+import { 
+    ContainerStyled as Container,
+    TitleStyled as Title,
+    BtnSecondaryStyled as BtnSecondary,
+    BtnPrimaryStyled as BtnPrimary, 
+}  from "./styles";
 
 const logo = require("../../public/logo.png")
 const Welcome = ({navigation}) => {

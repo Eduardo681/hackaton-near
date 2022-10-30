@@ -26,7 +26,7 @@ const Subtitle = styled.Text`
 
 
 const LogoContainer = styled.View`
-    flex: 3;
+    flex: 2;
     justify-content: center;
 `;
 
@@ -59,13 +59,13 @@ const BtnSecondary = styled.TouchableOpacity`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 13.313px 22.1883px;
+    padding: 13px 22px;
     gap: 11.09px;
     width: 100%;
     height: 60px;
     background: transparent;
     border: 2.21883px solid #00CFC3;
-    border-radius: 13.313px;
+    border-radius: 13px;
 `;
 
 const TextBtnSecondary = styled.Text`
@@ -93,7 +93,6 @@ const Input = styled.TextInput`
     width: 350px;
     height: 60px;
     color: white;
-    
     background: #21242D;
     border-radius: 13.3249px;
 `;
@@ -108,14 +107,13 @@ const Label = styled.Text`
 `;
 
 const ContainerBtnM = styled.View`
-    width: 180px;
-    margin-right: 20px;
+    justify-content: space-between;
 `;
 
 const TopDashboardAndCashFlow = styled.View`
     flex: 5;
     align-items: center;
-    margin-top: 10%
+    margin-top: 10%;
 `
 
 const ContainerAccountIcon = styled.View`
