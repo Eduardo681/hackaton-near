@@ -5,6 +5,7 @@ import Welcome from "./pages/Welcome";
 import Initial from "./pages/Initial";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import FlushCash from "./pages/FlushCash";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ const Router = () => {
             <Stack.Navigator>
                 <Stack.Screen name="Welcome" component={Welcome} options={{headerShown: false}}/>
                 <Stack.Screen name="Initial" component={Initial} options={{headerShown: false}}/>
+                <Stack.Screen name="FlushCash" component={FlushCash} options={{headerShown: false}}/>
                 <Stack.Screen name="Login" component={Login} options={{
                     headerStyle: {
                         backgroundColor: '#16171D',

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const Container = styled.SafeAreaView`
-      background-color: ${props => props.theme.background};
-      flex: 1;
+    background-color: ${props => props.theme.background};
+    flex: 1;
 `;
 
 const Title = styled.Text`
@@ -15,7 +15,7 @@ const Title = styled.Text`
 `;
 
 const Center = styled.View`
-    flex: 1;
+    flex: 2;
     justify-content: center;
     align-items: center;
 `;
@@ -112,7 +112,25 @@ const ContainerBtnM = styled.View`
     margin-right: 20px;
 `;
 
+const TopDashboardAndCashFlow = styled.View`
+    flex: 5;
+    align-items: center;
+    margin-top: 10%
+`
+
+const ContainerAccountIcon = styled.View`
+    align-items: center;
+    margin-left: 260px;
+    margin-bottom: 10%;
+`;
+
+const AccountIconText = styled.Text`
+    margin-top: 3px;
+    color: #fff;
+`;
+
 export {
     Subtitle, LogoContainer, BtnPrimary, TextBtnPrimary, BtnSecondary,
-    TextBtnSecondary, ContainerBtns, Input, Container, Title, Center, Label, ContainerBtnM
+    TextBtnSecondary, ContainerBtns, Input, Container, Title, Center, Label, ContainerBtnM,
+    ContainerAccountIcon, AccountIconText, TopDashboardAndCashFlow
 };

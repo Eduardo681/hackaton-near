@@ -5,6 +5,7 @@ import {LogoContainer, Subtitle} from "../../global-components";
 
 const logo = require("../../public/logo.png")
 const next = require("../../public/next.png")
+
 const Welcome = ({navigation}) => {
     return (
         <Container>

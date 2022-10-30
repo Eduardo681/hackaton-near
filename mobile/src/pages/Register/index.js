@@ -5,7 +5,10 @@ import { Checkbox } from 'react-native-paper';
 import {Text} from "react-native";
 
 
-const Register = () => {
+const Register = ({navigation}) => {
+
+    navigation.setOptions({headerTitle: "Registrar"});
+
     let {razao, setRazao} = useState("")
     let {cnpj, setCnpj} = useState("")
     let {tel, setTel} = useState("")
@@ -71,7 +74,7 @@ const Register = () => {
                     <Label>Aceito os <Text style={{color: "#00CFC3"}}>termos e condições</Text> </Label>
                 </View>
             </View>
-            <View style={{flex: 1}}>
+            <View style={{width: "100%"}}>
                 <BtnPrimary onPress={() => handleRegister}>
                     <TextBtnPrimary>Entrar</TextBtnPrimary>
                 </BtnPrimary>
