@@ -8,6 +8,8 @@ import List from "./pages/List";
 import Connect from "./pages/Connect";
 import ListEscritorios from "./pages/ListEscritorios";
 import DetailsOffice from "./pages/DetailsOffice";
+import HomeFirstAcess from "./pages/HomeFirstAcess"
+import FirstAcess from "./pages/FirstAcess"
 
 const router = createBrowserRouter([
     {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
         path: "/details-office",
         element: <DetailsOffice />,
     },
+    {
+        path: "/first-acess",
+        element: <HomeFirstAcess />
+    },
+    {
+        path: "/first-acess-create",
+        element: <FirstAcess />
+    }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
