@@ -7,7 +7,7 @@ const ContainerTopTitle = styled.Text`
 `;
 
 const ContainerBalanceText = styled.View`
-    flex: 5
+    flex: 1
 `
 
 const FinalBalance = styled.Text`
