@@ -5,7 +5,7 @@ const DetailsOffice = () => {
     const navigate = useNavigate();
 
     const clickButtonSave = () => {
-        navigate("/bank-consolidation");
+        navigate("/list");
     }
 
     return (

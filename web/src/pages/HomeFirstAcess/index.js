@@ -22,7 +22,7 @@ const HomeFirstAcess = () => {
         </div>
         <div className="half right">
             <div className="title">
-                Bem vindo ao<span style={{color: "#00CFC3"}}>Near</span>
+                Bem vindo ao<span style={{color: "#00CFC3", marginLeft: 5}}>Near</span>
             </div>
             <form action="">
                 <input type="text" placeholder="Informe seu CNPJ"/>
