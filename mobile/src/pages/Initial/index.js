@@ -13,9 +13,20 @@ import {
     BtnSecondaryStyled as BtnSecondary,
     BtnPrimaryStyled as BtnPrimary, 
 }  from "./styles";
+import {
+    useFonts, 
+    Poppins_400Regular, 
+    Poppins_700Bold
+} from "@expo-google-fonts/poppins";
 
 const logo = require("../../public/logo.png")
 const Initial = ({navigation}) => {
+    let [fontsLoaded] = useFonts({
+        Poppins_400Regular,
+        Poppins_700Bold,
+    });
+
+    if (!fontsLoaded) null;
 
     navigation.setOptions({headerTitle: ""});
 

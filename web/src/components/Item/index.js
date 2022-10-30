@@ -4,7 +4,10 @@ const Item = props => {
     const navigate = useNavigate();
 
     const clickButtonDetalhes = () => {
-        navigate("/details-office");
+        if (props.item.type_screen === "consolidation") {
+            return navigate("/bank-consolidation");
+        }
+        return navigate("/details-office");
     }
 
     const item = props.item;

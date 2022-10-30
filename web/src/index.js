@@ -10,6 +10,7 @@ import ListEscritorios from "./pages/ListEscritorios";
 import DetailsOffice from "./pages/DetailsOffice";
 import HomeFirstAcess from "./pages/HomeFirstAcess"
 import FirstAcess from "./pages/FirstAcess"
+import CreateOffice from "./pages/CreateOffice"
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     {
         path: "/first-acess-create",
         element: <FirstAcess />
+    },
+    {
+        path: "/create-office",
+        element: <CreateOffice />
     }
 ]);
 

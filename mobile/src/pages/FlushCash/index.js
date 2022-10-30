@@ -1,17 +1,20 @@
 import {
     Center,
     Container,
-    AccountIconText,
     ContainerAccountIcon,
     TopDashboardAndCashFlow, ImagePerson
 } from "../../global-components";
 
 import {View, ScrollView, Text, ActivityIndicator} from "react-native";
+import {
+    useFonts, 
+    Poppins_400Regular, 
+    Poppins_700Bold
+} from "@expo-google-fonts/poppins";
 
 import PeriodFilter from '../components/PeriodFilter';
 
 import {
-    ContainerTopTitle,
     FinalBalance,
     InitialBalance,
     ContainerBalanceText
@@ -22,6 +25,12 @@ import {useEffect, useState} from "react";
 
 
 const FlushCash = ({navigation}) => {
+    let [fontsLoaded] = useFonts({
+        Poppins_400Regular,
+        Poppins_700Bold,
+    });
+
+    if (!fontsLoaded) null;
 
     navigation.setOptions({headerTitle: "Fluxo de caixa"});
 
