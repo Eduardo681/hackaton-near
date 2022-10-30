@@ -112,9 +112,9 @@ const ContainerBtnM = styled.View`
 `;
 
 const TopDashboardAndCashFlow = styled.View`
-    flex: 5;
+    flex: 4;
     align-items: center;
-    margin-top: 10%;
+    padding-top: 20px;
 `
 
 const ContainerAccountIcon = styled.View`

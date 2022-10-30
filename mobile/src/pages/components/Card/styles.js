@@ -5,7 +5,7 @@ const CardContainer = styled.View`
     height: 75px;
    
     background: rgba(40, 43, 53, 0.5);
-    border-radius: 22.3067px;
+    border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;

@@ -19,13 +19,22 @@ const options = {
     headerTitleAlign: 'center',
 }
 
+
 const Router = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShadowVisible: false }}>
                 <Stack.Screen name="Welcome" component={Welcome} options={{headerShown: false}}/>
                 <Stack.Screen name="Initial" component={Initial} options={options}/>
-                <Stack.Screen name="FlushCash" component={FlushCash} options={{headerShown: false}}/>
+                <Stack.Screen name="FlushCash" component={FlushCash} options={{
+                    headerStyle: {
+                        backgroundColor: "#16171D",
+                        color: "#fff",
+                    },
+                    headerTintColor: "white",
+                    headerTitleAlign: 'center',
+                    headerBackVisible: false,
+                }}/>
                 <Stack.Screen name="Login" component={Login} options={options}/>
                 <Stack.Screen name="Register" component={Register} options={options}/>
                 <Stack.Screen name="Permission" component={Permission} options={options}/>

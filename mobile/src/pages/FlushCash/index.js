@@ -22,6 +22,9 @@ import {useEffect, useState} from "react";
 
 
 const FlushCash = ({navigation}) => {
+
+    navigation.setOptions({headerTitle: "Fluxo de caixa"});
+
     const [consolidation, setConsolidation] = useState([]);
     useEffect(() => {
         axios.get("https://c63c-177-69-47-81.sa.ngrok.io/transactions").then((res => {
@@ -48,9 +51,6 @@ const FlushCash = ({navigation}) => {
                 }}
             >
                 <TopDashboardAndCashFlow>
-                    <ContainerTopTitle>
-                        Fluxo de caixa
-                    </ContainerTopTitle>
                     <ContainerAccountIcon>
                         <ImagePerson source={person}/>
                     </ContainerAccountIcon>
