@@ -5,6 +5,8 @@ import {useState} from "react";
 
 const Login = ({navigation}) => {
 
+    navigation.setOptions({headerTitle: "Entrar"});
+
     const {email, setEmail} = useState("");
     const {password, setPassword} = useState("");
 
