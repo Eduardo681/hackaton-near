@@ -31,9 +31,9 @@ const Welcome = ({navigation}) => {
                     <Image source={logo}/>
                 </LogoContainer>
                 <View>
-                    <Title>
+                    <Title style={{fontFamily: "Poppins_700Bold"}}>
                         Bem vindo (a)
-                        ao <Subtitle>Near</Subtitle>
+                        ao <Subtitle style={{fontFamily: "Poppins_700Bold"}}>Near</Subtitle>
                     </Title>
                 </View>
             </Center>

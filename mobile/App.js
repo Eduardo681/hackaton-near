@@ -1,6 +1,9 @@
 import {ThemeProvider} from "styled-components";
 import theme from "./src/theme";
 import Router from "./src/Router";
+import { LogBox } from "react-native"
+
+LogBox.ignoreAllLogs(true);
 
 const App = () => {
 
