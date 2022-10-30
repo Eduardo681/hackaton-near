@@ -68,7 +68,7 @@ const PeriodFilter = () => {
                     onPress={() => showDatePicker('endDate')}
                 >
                     <InputPeriod>
-                        <InputValue>{startDate}</InputValue>
+                        <InputValue>{endDate}</InputValue>
                     </InputPeriod>
                 </TouchableOpacity>
                 <IconPeriod>

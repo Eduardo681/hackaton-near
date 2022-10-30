@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const PeriodOfFilter = styled.View`
-    flex: 1;
+    flex: 2;
+    margin-bottom: 20%;
 `;
 
 const TextInput = styled.Text`
