@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
+    const navigate = useNavigate();
+
+    const clickButton = () => {
+        navigate("/list-escritorios");
+    }
+
     return <div className="home">
         <div className="half left">
             <div>
@@ -15,7 +23,15 @@ const Home = () => {
             <form action="">
                 <input type="text" placeholder="Informe seu e-mail"/>
                 <input type="password" placeholder="Informe sua senha"/>
-                <button className="btn-primary">Entrar</button>
+                <button
+                    className={{
+                        "btn-primary": true,
+                        "button-pointer": true
+                    }}
+                    onClick={() => {clickButton()} 
+                }>
+                    Entrar
+                </button>
             </form>
         </div>
     </div>

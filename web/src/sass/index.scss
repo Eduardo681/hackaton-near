@@ -288,6 +288,7 @@ input {
   }
 
   .item {
+    cursor: pointer;
     display: flex;
     padding: 30px;
     width: 1000px;
@@ -375,4 +376,69 @@ input {
       color: #A7AEBF;
     }
   }
+}
+
+.button-pointer {
+  cursor: pointer;
+}
+
+.color-white {
+  color: white;
+}
+
+.detail-office {
+  button {
+    width: 168.63px;
+    height: 53.25px;
+  }
+
+  input {
+    margin-top: 10px;
+  }
+
+  .teste {
+    align-items: center;
+  }
+  
+  .containerForm {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    margin-top: 100px;
+    padding: 100px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22.3067px;
+    margin-bottom: 70px;
+
+    label {
+      margin-bottom: 10px;
+      color: #A7AEBF;
+    }
+
+    input {
+      margin-bottom: 5%;
+    }
+
+    .input-transparent {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+
+.btn-outline-primary {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #04AA6D;
+  color: green;
 }
