@@ -2,6 +2,7 @@ import { useState } from "react";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { TouchableOpacity } from "react-native";
+import moment from "moment";
 
 import {
     PeriodOfFilter,
@@ -15,10 +16,11 @@ import {
 
 import formatDate from "../../../utils/formatDate";
 
+
 const PeriodFilter = () => {
 
-    const [startDate, setStartDate] = useState('');
-    const [endDate, setEndDate] = useState('');
+    const [startDate, setStartDate] = useState(moment().startOf('month').format('DD/MM/YYYY'));
+    const [endDate, setEndDate] = useState(moment().endOf('month').format('DD/MM/YYYY'));
 
     const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
     const [datePickerValue, setDatePickerValue] = useState('');
@@ -74,7 +76,7 @@ const PeriodFilter = () => {
                 <IconPeriod>
                     <Ionicons
                         name="search-outline"
-                        size={32}
+                        size={22}
                         color="white"
                     />
                 </IconPeriod>

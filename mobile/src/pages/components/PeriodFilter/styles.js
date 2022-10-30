@@ -7,7 +7,9 @@ const PeriodOfFilter = styled.View`
 
 const TextInput = styled.Text`
     color: #FFF;
-    margin: 5% 3%;
+    margin-top: 4%;
+    margin-right: 3%;
+    margin-left: 3%;
 `;
 
 const InputPeriodContainer = styled.View`
@@ -22,7 +24,7 @@ const InputPeriod = styled.View`
     padding: 14px 22px 14px 17px;
     gap: 11.1px;
     width: 150px;
-    height: 60px;
+    height: 45px;
     color: white;
     background: #21242D;
     border-radius: 13.3249px;
