@@ -11,7 +11,7 @@ const Login = ({navigation}) => {
     const {password, setPassword} = useState("");
 
     const handleLogin = () => {
-        navigation.navigate('Dashboard')
+        navigation.navigate('FlushCash')
     }
 
     return <Container>

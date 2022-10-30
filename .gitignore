@@ -2,3 +2,5 @@ web/node_modules
 mobile/node_modules
 .env
 .idea
+node_modules
+mobile/.expo

@@ -5,18 +5,28 @@ import {
     ContainerAccountIcon,
     TopDashboardAndCashFlow
 } from "../../global-components";
+import Ionicons from '@expo/vector-icons/Ionicons';
+
+import { View } from "react-native";
 
 import PeriodFilter from '../components/PeriodFilter';
 
-import {ContainerTopTitle} from './styles';
+import {
+    ContainerTopTitle,
+    FinalBalance,
+    InitialBalance,
+    ContainerBalanceText
+} from './styles';
 
-import Ionicons from '@expo/vector-icons/Ionicons';
 
-const Dashboard = ({ navigation }) => {
+const FlushCash = ({ navigation }) => {
     return (
         <Container>
-            <Center>
-
+            <Center
+                style={{
+                    backgroundColor: '#121217'
+                }}
+            >
                 <TopDashboardAndCashFlow>
                     <ContainerTopTitle>
                         Fluxo de caixa
@@ -28,12 +38,20 @@ const Dashboard = ({ navigation }) => {
                         </AccountIconText>
                     </ContainerAccountIcon>
                 </TopDashboardAndCashFlow>
-
                 <PeriodFilter/>
-
             </Center>
+            <ContainerBalanceText>
+                <View>
+                    <FinalBalance>
+                        Saldo final
+                    </FinalBalance>
+                    <InitialBalance>
+                        Saldo inicial
+                    </InitialBalance>
+                </View>
+            </ContainerBalanceText>
         </Container>
     );
 }
 
-export default Dashboard;
+export default FlushCash;
