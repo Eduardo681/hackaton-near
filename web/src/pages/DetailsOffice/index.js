@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/Sidebar";
 
 const DetailsOffice = () => {
+    const navigate = useNavigate();
+
+    const clickButtonReturn = () => {
+        navigate("/list-escritorios");
+    }
 
     return (
         <div className="detail-office">
@@ -8,7 +14,7 @@ const DetailsOffice = () => {
             <div className="container">
                 <div className="title">Detalhes</div>
                 <div className="containerForm">
-                    <div className="teste">
+                    <div className="containerFields">
                         <div>
                             <label>Razão Social</label>
                             <input
@@ -53,8 +59,20 @@ const DetailsOffice = () => {
                         </div>
                     </div>
                 </div>
-                <button className="btn-outline-primary">Excluir</button>
-                <button className="btn-primary">Salvar</button>
+                <div className="grid-buttons">
+                    <button
+                        className="btn-outline-primary"
+                        onClick={() => clickButtonReturn()}
+                    >
+                        Excluir
+                    </button>
+                    <button
+                        className="btn-primary"
+                        onClick={() => clickButtonReturn()}
+                    >
+                        Salvar
+                    </button>
+                </div>
             </div>
         </div>
     )

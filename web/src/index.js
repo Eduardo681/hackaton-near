@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <ListEscritorios />,
     },
     {
-        path: "/details-office/:id",
+        path: "/details-office",
         element: <DetailsOffice />,
     },
 ]);

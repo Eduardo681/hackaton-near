@@ -18,16 +18,13 @@ const Home = () => {
         </div>
         <div className="half right">
             <div className="title">
-                Bem vindo ao <span style={{color: "#00CFC3"}}>Near</span>
+                Bem vindo ao <span style={{color: "#00CFC3"}}> Near</span>
             </div>
             <form action="">
                 <input type="text" placeholder="Informe seu e-mail"/>
                 <input type="password" placeholder="Informe sua senha"/>
                 <button
-                    className={{
-                        "btn-primary": true,
-                        "button-pointer": true
-                    }}
+                    className={"btn-primary button-pointer"}
                     onClick={() => {clickButton()} 
                 }>
                     Entrar

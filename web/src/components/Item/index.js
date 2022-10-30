@@ -4,7 +4,7 @@ const Item = props => {
     const navigate = useNavigate();
 
     const clickButtonDetalhes = () => {
-        navigate("/details-office/1");
+        navigate("/details-office");
     }
 
     const item = props.item;
