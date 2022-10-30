@@ -3,11 +3,11 @@ import {
     Container,
     AccountIconText,
     ContainerAccountIcon,
-    TopDashboardAndCashFlow
+    TopDashboardAndCashFlow, ImagePerson
 } from "../../global-components";
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-import {View, ScrollView} from "react-native";
+import {View, ScrollView, Text, Image} from "react-native";
 
 import PeriodFilter from '../components/PeriodFilter';
 
@@ -23,14 +23,24 @@ import {useEffect, useState} from "react";
 
 
 const FlushCash = ({navigation}) => {
-    const [consolidation, setConsolidation] = useState(undefined);
+    const [consolidation, setConsolidation] = useState([]);
     useEffect(() => {
         axios.get("https://c63c-177-69-47-81.sa.ngrok.io/transactions").then((res => {
             setConsolidation(res.data.results);
             console.log(res.data.results)
         }))
-    }, consolidation)
+    }, [])
 
+    const saldo = () => {
+        let saldoTotal = 0;
+        consolidation.map(e => {
+            console.log(e)
+            saldoTotal += e.amount;
+        })
+
+        return saldoTotal;
+    }
+    const person = require("../../public/person.png");
     return (
         <Container>
             <Center
@@ -43,10 +53,7 @@ const FlushCash = ({navigation}) => {
                         Fluxo de caixa
                     </ContainerTopTitle>
                     <ContainerAccountIcon>
-                        <Ionicons name="ios-person-circle-outline" size={32} color="green"/>
-                        <AccountIconText>
-                            Dados Pessoais
-                        </AccountIconText>
+                        <ImagePerson source={person}/>
                     </ContainerAccountIcon>
                 </TopDashboardAndCashFlow>
                 <PeriodFilter/>
@@ -56,8 +63,17 @@ const FlushCash = ({navigation}) => {
                     <FinalBalance>
                         Saldo final
                     </FinalBalance>
+                       <View>
+                           {
+                               saldo() > 0 ? <Text style={{color: "#00CFC3", fontSize: 32, marginLeft: "5%"}}>
+                                  R$ {saldo().toFixed(2)}
+                               </Text> : <Text style={{color: "#F54968", fontSize: 32, marginLeft: "5%"}}>
+                                  R$ {saldo().toFixed(2)}
+                               </Text>
+                           }
+                       </View>
                     <InitialBalance>
-                        Saldo inicial
+                        Saldo inicial   R$ 15.000,00
                     </InitialBalance>
                 </View>
             </ContainerBalanceText>
@@ -65,7 +81,7 @@ const FlushCash = ({navigation}) => {
                 <ScrollView>
                     {
                         consolidation === undefined ? <></> :
-                            consolidation.map(e => <Card item={e} />)
+                            consolidation.map(e => <Card item={e}/>)
                     }
                 </ScrollView>
             </View>

@@ -122,6 +122,11 @@ const ContainerAccountIcon = styled.View`
     margin-bottom: 10%;
 `;
 
+const ImagePerson = styled.Image`
+    width: 90px;
+    height: 40px;
+`;
+
 const AccountIconText = styled.Text`
     margin-top: 3px;
     color: #fff;
@@ -130,5 +135,5 @@ const AccountIconText = styled.Text`
 export {
     Subtitle, LogoContainer, BtnPrimary, TextBtnPrimary, BtnSecondary,
     TextBtnSecondary, ContainerBtns, Input, Container, Title, Center, Label, ContainerBtnM,
-    ContainerAccountIcon, AccountIconText, TopDashboardAndCashFlow
+    ContainerAccountIcon, AccountIconText, TopDashboardAndCashFlow, ImagePerson
 };
