@@ -1,7 +1,7 @@
 import Sidebar from "../../components/Sidebar";
 import CardOfficer from "../../components/CardOfficer";
 import CardConsolidation from "../../components/CardConsolidation";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 
 const BankConsolidation = () => {
@@ -12,10 +12,10 @@ const BankConsolidation = () => {
         "email": "contato@construcoesme.com.br"
     }
 
-    let consolidation = [];
+    let [consolidation, setConsolidation] = useState([]);
     useEffect(() => {
         axios.get("https://c63c-177-69-47-81.sa.ngrok.io/transactions").then((res => {
-            consolidation = res.data.results
+            setConsolidation(res.data.results);
         }))
     }, consolidation)
 

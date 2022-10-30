@@ -5,9 +5,8 @@ import {
     ContainerAccountIcon,
     TopDashboardAndCashFlow, ImagePerson
 } from "../../global-components";
-import Ionicons from '@expo/vector-icons/Ionicons';
 
-import {View, ScrollView, Text, Image} from "react-native";
+import {View, ScrollView, Text, ActivityIndicator} from "react-native";
 
 import PeriodFilter from '../components/PeriodFilter';
 
@@ -80,7 +79,9 @@ const FlushCash = ({navigation}) => {
             <View style={{flex: 4, alignItems: "center"}}>
                 <ScrollView>
                     {
-                        consolidation === undefined ? <></> :
+                        consolidation === undefined || consolidation.length === 0 ? <Center>
+                                <ActivityIndicator size="large" />
+                            </Center> :
                             consolidation.map(e => <Card item={e}/>)
                     }
                 </ScrollView>
