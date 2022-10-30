@@ -12,12 +12,14 @@ const ContainerBalanceText = styled.View`
 
 const FinalBalance = styled.Text`
     margin-top: 3%
+    margin-left: 5%;
     color: #FFF;
+    flex-direction: column;
 `
 
 const InitialBalance = styled.Text`
     color: #FFF;
-    margin-left: 80%
+    margin-left: 50%
 `
 
 export {
