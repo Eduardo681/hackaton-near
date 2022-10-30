@@ -15,7 +15,10 @@ import {
 }  from "./styles";
 
 const logo = require("../../public/logo.png")
-const Welcome = ({navigation}) => {
+const Initial = ({navigation}) => {
+
+    navigation.setOptions({headerTitle: ""});
+
     return (
         <Container>
             <Center>
@@ -49,4 +52,4 @@ const Welcome = ({navigation}) => {
     );
 }
 
-export default Welcome;
+export default Initial;
