@@ -11,6 +11,8 @@
     - [Credits](https://github.com/Eduardo681/hackaton-near#credits)
     - [Web](https://github.com/Eduardo681/hackaton-near#web)
     - [Mobile](https://github.com/Eduardo681/hackaton-near#mobile)
+- [BackEnd](https://github.com/HigorJardini/Near-Hackathon-22)
+
 - [Avaliable scripts](https://github.com/Eduardo681/hackaton-near#Avaliable-scripts)
  
 
@@ -21,12 +23,9 @@ That application was developed for an challenge from Hackathon 2022. Using NodeJ
 The Objective are create a api for a system of management accounting
 
 - [NodeJs:18](https://nodejs.org/en/) - NodeJs
-- [Typescript:4.4](https://www.typescriptlang.org/) - Typescript
 - [Yarn:1](https://yarnpkg.com/) - Yarn OR [NPM:1](https://www.npmjs.com/) - NPM
-- [PostgreSQL:14](https://www.postgresql.org/)
-But you can run the application with docker
-- [Docker](https://www.docker.com/) - Docker
-- [Docker Compose](https://docs.docker.com/compose/) - Docker Compose
+- [Sass](https://sass-lang.com) - Sass
+
 
 ### Frontend Prototype
 
@@ -60,8 +59,10 @@ But you can run the application with docker
 
 - [Figma Project](https://www.figma.com/file/YVFUXczqQ01x7Myw9xx39j/hackthon-contabil?node-id=0%3A1)
 
+## Backend-Repo
+https://github.com/HigorJardini/Near-Hackathon-22
 
-### Avaliable-scripts
+## Avaliable-scripts
 #### npm run start-web
 Start the web application.
 
