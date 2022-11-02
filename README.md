@@ -5,18 +5,13 @@
 
 ## Index
 
-- [Introduction](https://github.com/HigorJardini/Near-Hackathon-22#introduction)
-  - [Basic Requirements](https://github.com/HigorJardini/Near-Hackathon-22#requirements)
-  - [Frontend Prototype](https://github.com/HigorJardini/Near-Hackathon-22#frontend-prototype)
-    - [Credits](https://github.com/HigorJardini/Near-Hackathon-22#credits)
-    - [Web](https://github.com/HigorJardini/Near-Hackathon-22#web)
-    - [Mobile](https://github.com/HigorJardini/Near-Hackathon-22#mobile)
-  - [Application dependencies](https://github.com/HigorJardini/Near-Hackathon-22#application-dependencies)
-  - [Build docker image](https://github.com/HigorJardini/Near-Hackathon-22#build-docker-image)
-  - [Running migrations](https://github.com/HigorJardini/Near-Hackathon-22#running-migrations)
-  - [Running development](https://github.com/HigorJardini/Near-Hackathon-22#running-development)
-  - [Running build](https://github.com/HigorJardini/Near-Hackathon-22#running-build)
-- [Avaliable scripts](https://github.com/HigorJardini/Near-Hackathon-22#Avaliable scripts)
+- [Introduction](https://github.com/Eduardo681/hackaton-near#introduction)
+  - [Basic Requirements](https://github.com/Eduardo681/hackaton-near#requirements)
+  - [Frontend Prototype](https://github.com/Eduardo681/hackaton-near#frontend-prototype)
+    - [Credits](https://github.com/Eduardo681/hackaton-near#credits)
+    - [Web](https://github.com/Eduardo681/hackaton-near#web)
+    - [Mobile](https://github.com/Eduardo681/hackaton-near#mobile)
+- [Avaliable scripts](https://github.com/Eduardo681/hackaton-near#Avaliable-scripts)
  
 
 
@@ -66,7 +61,7 @@ But you can run the application with docker
 - [Figma Project](https://www.figma.com/file/YVFUXczqQ01x7Myw9xx39j/hackthon-contabil?node-id=0%3A1)
 
 
-### Avaliable scripts
+### Avaliable-scripts
 #### npm run start-web
 Start the web application.
 
@@ -77,4 +72,4 @@ Start the mobile application.
 
 ### Thank you! :)
 
-For doubts email me `higorjardini07@gmail.com`.
+For doubts email me `edu.slhenrique@gmail.com`.
