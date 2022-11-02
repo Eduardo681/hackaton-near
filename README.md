@@ -11,7 +11,7 @@
     - [Credits](https://github.com/Eduardo681/hackaton-near#credits)
     - [Web](https://github.com/Eduardo681/hackaton-near#web)
     - [Mobile](https://github.com/Eduardo681/hackaton-near#mobile)
-- [BackEnd](https://github.com/HigorJardini/Near-Hackathon-22)
+- [BackEnd](https://github.com/Eduardo681/hackaton-near#Backend-Repo)
 
 - [Avaliable scripts](https://github.com/Eduardo681/hackaton-near#Avaliable-scripts)
  
