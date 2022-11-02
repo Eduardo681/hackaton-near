@@ -19,7 +19,7 @@
 
 ## Introduction
 
-That application was developed for an challenge from Hackathon 2022. Using NodeJs + Express + Typescript
+That application was developed for an challenge from Hackathon 2022. Using React + Sass
 The Objective are create a api for a system of management accounting
 
 - [NodeJs:18](https://nodejs.org/en/) - NodeJs
